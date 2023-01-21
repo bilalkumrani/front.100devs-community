@@ -53,7 +53,7 @@ const RegistrationForm = () => {
       firstName, lastName, email , password,
      }),
   })
-  response.json().then(res =>{ navigate("/login")}).catch(err => console.log(err))
+  response.json().then(res =>{ navigate("/verify")}).catch(err => console.log(err))
 
   }
 
