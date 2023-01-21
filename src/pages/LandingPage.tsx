@@ -1,8 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import {welcome} from "../assets/svg/images"
-import dotenv from 'dotenv';
-dotenv.config();
 import {
     Button,
 
