@@ -1,0 +1,19 @@
+.formBox {
+  width: 610px;
+  margin-bottom: 5%;
+  .backBtnRow {
+    display: flex;
+    justify-content: end;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .row-item-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
