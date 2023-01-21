@@ -60,7 +60,7 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
           if(chk){
             localStorage.setItem('token',res.token)
           }
-          window.location.href = res.url;
+          window.location.replace(res.url);
         
         })
 
