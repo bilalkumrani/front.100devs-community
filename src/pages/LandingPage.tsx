@@ -6,10 +6,15 @@ import {
 
   } from "@mui/material";
   import { loginButtonStyle } from "../global/styleVar";
+  import dotenv from "react-dotenv";
+
 
 
 const LandingPage = () => {
+  dotenv.config();
+
     const navigate = useNavigate()
+    console.log( "printing: ",process.env.REACT_APP_API_URL)
     
   return (
   <>

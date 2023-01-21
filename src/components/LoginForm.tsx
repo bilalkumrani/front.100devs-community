@@ -14,6 +14,8 @@ import {
 // icons
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import dotenv from "react-dotenv";
+
 
 // scss
 import main from "./scss/main.module.scss";
@@ -22,6 +24,7 @@ import { loginButtonStyle } from "../global/styleVar";
 interface ILoginFormProps {}
 
 const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
+  dotenv.config();
   const [password, setPassword] = React.useState("");
   const [isShowPwd, setIsShowPwd] = React.useState(false);
   const [email,setEmail] = React.useState(false);

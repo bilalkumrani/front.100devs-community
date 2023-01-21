@@ -18,10 +18,12 @@ import { buttonStyle } from "../global/styleVar";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { useNavigate } from "react-router-dom";
+import dotenv from "react-dotenv";
 
 
 
 const RegistrationForm = () => {
+  dotenv.config();
   const [password, setPassword] = React.useState("");
   const [isShowPwd, setIsShowPwd] = React.useState(false);
   const [confirmPassword, setConfirmPassword] = React.useState("");
