@@ -23,7 +23,6 @@ import dotenv from "react-dotenv";
 
 
 const RegistrationForm = () => {
-  dotenv.config();
   const [password, setPassword] = React.useState("");
   const [isShowPwd, setIsShowPwd] = React.useState(false);
   const [confirmPassword, setConfirmPassword] = React.useState("");

@@ -24,7 +24,6 @@ import { loginButtonStyle } from "../global/styleVar";
 interface ILoginFormProps {}
 
 const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
-  dotenv.config();
   const [password, setPassword] = React.useState("");
   const [isShowPwd, setIsShowPwd] = React.useState(false);
   const [email,setEmail] = React.useState(false);
