@@ -10,6 +10,7 @@ import {
 
 const LandingPage = () => {
     const navigate = useNavigate()
+    
   return (
   <>
   <div className="overflow-hidden ">
