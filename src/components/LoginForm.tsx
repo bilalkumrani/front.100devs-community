@@ -9,6 +9,7 @@ import {
   IconButton,
   Box,
 } from "@mui/material";
+require("dotenv-webpack").config();
 
 // icons
 import Visibility from "@mui/icons-material/Visibility";

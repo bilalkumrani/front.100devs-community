@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 // scss
 import main from "./scss/main.module.scss";
-import {config} from "dotenv";
+require("dotenv-webpack").config();
 
 import { buttonStyle } from "../global/styleVar";
 
