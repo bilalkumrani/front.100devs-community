@@ -43,7 +43,7 @@ const RegistrationForm = () => {
   const handleSubmit = async (): Promise<void> =>{
     const {firstName, lastName, email, } = data;
 
-    const response = await fetch('http://localhost:4000/register', {
+    const response = await fetch(`${process.env.API_URL}/register`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json;charset=UTF-8',

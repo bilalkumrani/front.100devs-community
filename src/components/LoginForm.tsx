@@ -40,7 +40,7 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
 
     try {
       
-          const response = await window.fetch('http://localhost:4000/login', {
+          const response = await window.fetch(`${process.env.API_URL}/login`, {
           
           method: 'POST',
           headers: {
