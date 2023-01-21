@@ -13,7 +13,7 @@ import {
 const LandingPage = () => {
 
     const navigate = useNavigate()
-    console.log( "printing: ",process.env.REACT_APP_API_URL)
+    
     
   return (
   <>

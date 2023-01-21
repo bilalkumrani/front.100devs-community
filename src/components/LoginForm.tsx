@@ -10,12 +10,9 @@ import {
   Box,
 } from "@mui/material";
 
-
 // icons
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import dotenv from "react-dotenv";
-
 
 // scss
 import main from "./scss/main.module.scss";
@@ -43,7 +40,7 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
 
     try {
       
-          const response = await window.fetch(`${process.env.REACT_APP_API_URL}/login`, {
+          const response = await window.fetch(`${process.env.API_URL}/login`, {
           
           method: 'POST',
           headers: {
@@ -60,7 +57,7 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
           if(chk){
             localStorage.setItem('token',res.token)
           }
-          window.location.replace(res.url);
+          window.location.href = res.url;
         
         })
 
