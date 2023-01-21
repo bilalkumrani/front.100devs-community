@@ -67,6 +67,7 @@ const RegistrationForm = () => {
   const handleMouseDownConfirmPassword = (event: any) => event.preventDefault();
 
   return (
+    
     <div className={main.formBox}>
 
       <div className={main.row}>
@@ -155,8 +156,8 @@ const RegistrationForm = () => {
         Register Account
       </Button>
       </div>
-
     </div>
+    
   );
 };
 

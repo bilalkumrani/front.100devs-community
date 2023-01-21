@@ -19,7 +19,7 @@ const LandingPage = () => {
     <h1 className="text-2xl font-medium" style={{cursor:"pointer"}} onClick={()=>{navigate("/")}}>#100DEVS</h1>
   </div>
 </div>
-<div className="h-screen">
+<div >
 <div className="flex justify-center py-10">
         <img className="w-56" src={welcome} alt="" />
     </div>
@@ -35,34 +35,7 @@ const LandingPage = () => {
   </div>
 </div>
 </div>
-
-{/* footer section  */}
-<div className="bg-gray-900 text-white py-4">
-  <div className="container mx-auto flex flex-wrap items-center">
-    <div className="w-full md:w-1/2 text-center md:text-left">
-      <p className="text-sm">Copyright ©2022 Community Site</p>
-    </div>
-    <div className="w-full md:w-1/2 text-center md:text-right">
-      <ul className="list-reset flex justify-center flex-wrap">
-        <li className="mr-3">
-          <a href="#" className="text-white hover:text-blue-500">Contact</a>
-        </li>
-        <li className="mr-3">
-          <a href="#" className="text-white hover:text-blue-500">Terms of Service</a>
-        </li>
-        <li className="mr-3">
-          <a href="#" className="text-white hover:text-blue-500">Privacy Policy</a>
-        </li>
-      </ul>
-    </div>
   </div>
-</div>
-
-  </div>
-  
-
-
-
   </>
   );
 };

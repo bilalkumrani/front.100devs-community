@@ -8,18 +8,19 @@
   justify-content: center;
   flex-direction: column;
   .companyName {
-    margin-top: -2rem;
+    margin-top: -4rem;
     font-weight: 1000;
     font-size: 32px;
     color: $primary;
   }
   .logoHeader {
+    
     display: flex;
     align-items: center;
     margin-bottom: 10px;
  
     .logo {
-      width: 200px;
+      width: 150px;
       border-radius: 50%;
       display: flex;
       align-items: center;
