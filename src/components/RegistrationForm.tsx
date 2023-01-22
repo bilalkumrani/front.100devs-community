@@ -27,6 +27,7 @@ const RegistrationForm = () => {
   const [isShowPwd, setIsShowPwd] = React.useState(false);
   const [confirmPassword, setConfirmPassword] = React.useState("");
   const [isShowConfirmPwd, setIsShowConfirmPwd] = React.useState(false);
+  const [buttonText, setButtonText] = React.useState("Register Account");
   const [data, setData] = React.useState({
     firstName:"", lastName:"", email:"",
   })
@@ -42,6 +43,7 @@ const RegistrationForm = () => {
   }
 
   const handleSubmit = async (): Promise<void> =>{
+    setButtonText("Registering....");
     const {firstName, lastName, email, } = data;
 
     const response = await fetch(`${process.env.REACT_APP_API_URL}/register`, {
@@ -53,7 +55,9 @@ const RegistrationForm = () => {
       firstName, lastName, email , password,
      }),
   })
-  response.json().then(res =>{ navigate("/verify")}).catch(err => console.log(err))
+  response.json().then(res =>{
+    setButtonText("Done");
+    navigate("/verify")}).catch(err => console.log(err))
 
   }
 
@@ -154,7 +158,7 @@ const RegistrationForm = () => {
       </div>
       <div style={{display:"flex", justifyContent:"center"}}>
       <Button onClick={handleSubmit} variant="contained" sx={buttonStyle} fullWidth>
-        Register Account
+        {buttonText}
       </Button>
       </div>
     </div>
