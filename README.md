@@ -8,5 +8,5 @@ Check out the live version [HERE](https://front-100devs-community.vercel.app/)
 
 Contributions are always welcome!
 
-See [`contributing.md`](https://github.com/bilalkumrani/api.100devs-community/blob/main/contributing.md) for ways to get started.
+See [`contributing.md`](https://github.com/bilalkumrani/front.100devs-community/blob/main/contributing.md) for ways to get started.
 
