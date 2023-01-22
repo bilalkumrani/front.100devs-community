@@ -25,7 +25,6 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
   const [isShowPwd, setIsShowPwd] = React.useState(false);
   const [email,setEmail] = React.useState(false);
   const [chk,setChk] = React.useState(false);
-  const [buttonText, setButtonText] = React.useState("Login");
 
 
   //handlers
@@ -39,7 +38,7 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
 
 
   const handleSubmit = async (): Promise<void> =>{
-    setButtonText("Logging in....");
+    
 
     try {
       
@@ -60,7 +59,7 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
           if(chk){
             localStorage.setItem('token',res.token)
           }
-          setButtonText("Logged in");
+          
           window.location.href = res.url;
         
         })
